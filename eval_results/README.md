@@ -26,4 +26,4 @@ Paired original vs repaired-reference evaluations after +3000 iterations from th
 
 The v2 evaluator is not shipped. These JSON files are the record. Print the published table with `python tools/summarize_seam_results.py`.
 
-Intermediate AMP v1–v4 JSON files remain in the development archive only.
+Intermediate AMP v1–v4 JSON files are not in this tree.

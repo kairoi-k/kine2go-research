@@ -1,8 +1,6 @@
 # Implementation audit
 
-This document summarizes correctness issues identified during the conditional-AMP implementation review and the controls added before the frozen clean run. It replaces model-specific review transcripts with a neutral technical record.
-
-The audit establishes what was checked and corrected; it does not claim that the implementation is free of undiscovered defects.
+This document summarizes correctness issues identified during the conditional-AMP implementation review and the controls added before the frozen clean run.
 
 ## State-feature semantics
 
@@ -43,11 +41,11 @@ Balancing real-data buckets alone is insufficient if the discriminator can disti
 
 Policy and discriminator state form a logical pair for a conditional-AMP run. The checkpoint path was audited to preserve paired iteration semantics, avoid destructive resume behavior, and record enough provenance to associate a final evaluation with the intended policy/discriminator/training revision.
 
-The frozen clean-run result identifies the evaluated policy artifact by path and SHA-256 prefix; the large checkpoint itself is not distributed in Git.
+The frozen clean-run result identifies the evaluated policy by path and SHA-256 prefix. The checkpoint file is not in this tree.
 
 ## Evaluator corrections
 
-Evaluation correctness was treated separately from training correctness. Earlier development evaluators produced intermediate records and exposed several semantic defects; those revisions are omitted from the curated public snapshot and remain in the development archive.
+Evaluation correctness was treated separately from training correctness. Earlier evaluators had semantic defects; v5 is the frozen evaluator.
 
 Important evaluator corrections included:
 
