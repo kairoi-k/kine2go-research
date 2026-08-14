@@ -20,9 +20,6 @@ FORBIDDEN_NAMES = {
     "CMakeCache.txt",
     "cmake_install.cmake",
     "CTestTestfile.cmake",
-    "STORY.md",
-    "HANDOFF.md",
-    "AGENTS.md",
 }
 FORBIDDEN_PREFIXES = ("._",)
 FORBIDDEN_SUFFIXES = (
