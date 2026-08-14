@@ -9,6 +9,10 @@ A fork of [`nomagiclab/kine2go-pipeline`](https://github.com/nomagiclab/kine2go-
 >
 > **Seam, v2 JSON record.** Same start, three seeds, repaired vs original cycle seam: RMSE **-29% / -23% / -41%** (aggregate **-31%**). Both arms stay near ~1.4 m/s.
 
+![AMP command-follow failure](docs/media/amp_command_fail.gif)
+
+Mid-training clip (iter 1000): the policy does not hold commanded speed. Frozen v5 numbers are in [`eval_results/amp_clean_run_5000_v5.json`](eval_results/amp_clean_run_5000_v5.json).
+
 Development milestone `0ad4343` is provenance for the archive.
 
 ## Scope
@@ -36,6 +40,7 @@ evaluation/           frozen v5 evaluator + portable launcher
 eval_results/         AMP v5 result + seam v2 JSON record
 tests/                CPU-safe conditional-AMP regression tests
 docs/                 protocol, audit, provenance, and reproduction notes
+docs/media/           README clip of the AMP command-follow failure
 ```
 
 ## Installation
@@ -79,7 +84,7 @@ Exact frozen launch and gates: [`docs/clean_run_preregistration.md`](docs/clean_
 | [`docs/REPRODUCIBILITY.md`](docs/REPRODUCIBILITY.md) | environment and reproduction boundary |
 | [`docs/PROVENANCE.md`](docs/PROVENANCE.md) | upstream and development provenance |
 
-The evaluated `model_5000.pt` checkpoint is intentionally not distributed in Git. Its recorded SHA-256 prefix is `4dfb111d165275f9`; the committed result JSON is the canonical evaluation record for that artifact.
+The evaluated `model_5000.pt` is not in this tree. Recorded SHA-256 prefix: `4dfb111d165275f9`. The committed result JSON is the canonical evaluation record.
 
 ## Checks
 

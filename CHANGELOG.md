@@ -1,5 +1,9 @@
 # Changelog
 
+## Unreleased
+
+- README clip of the AMP command-follow failure (`docs/media/amp_command_fail.gif`).
+
 ## 2026-08-13
 
 Frozen conditional-AMP research state at development milestone `0ad4343`.
