@@ -37,9 +37,9 @@ python data/extract_disc_data_c.py <clips_dir> <output.npy>
 
 The generator expects Kine2Go-style `*/motion.npy` clips at 60 Hz. It converts world-frame linear/angular velocities to the policy feature frames, constructs adjacent-frame transitions, smooths horizontal speed labels, and removes near-stationary transitions below 0.1 m/s.
 
-## Curated-release policy
+## What's in git
 
-Only `disc_data_c6.npy` is retained in the public candidate because it is the corrected dataset consumed by the frozen baseline. Earlier `disc_data*` variants were intermediate development artifacts and are intentionally omitted.
+Only `disc_data_c6.npy` is the frozen baseline input. Earlier `disc_data*` variants are not in this tree.
 
 Git blob identity for the retained development artifact: `ada1bd929a3b675735ff54c2e96d3b44b541d886`.
 

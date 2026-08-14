@@ -2,7 +2,7 @@
 
 Last updated: 2026-08-13
 
-This file is the compact state of record for the curated research release. Historical evaluator versions are retained where they are required to interpret previously generated evidence; current claims are anchored to the artifacts below.
+This file is the compact state of record. Historical evaluator versions stay when they are needed to interpret older evidence; current claims are anchored to the artifacts below.
 
 ## Upstream provenance
 
@@ -10,7 +10,7 @@ This file is the compact state of record for the curated research release. Histo
 - Upstream base: `65b39f104706c1b4307dfc2a7df2aa8bed8d20aa`
 - Upstream paper: Pałucki et al., *Kine2Go: Kinematic dataset for the Unitree Go2 robot with diverse gaits and motions* (2026)
 
-The public release is a curated snapshot. Development-history commit identifiers are provenance metadata, not public-release revision identifiers.
+Development milestone IDs (e.g. `0ad4343`) refer to the archive, not this Git history.
 
 ## Frozen single-reference conditional-AMP baseline
 
