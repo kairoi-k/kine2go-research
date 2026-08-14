@@ -4,7 +4,7 @@ This page maps claims to committed artifacts. Two evidence threads are recorded 
 
 ## 1. Frozen conditional-AMP baseline
 
-Development milestone `0ad4343` (2026-08-13). Development commit IDs are provenance; they need not exist in a clean public-release history.
+Frozen 2026-08-13.
 
 | Purpose | Canonical artifact |
 |---|---|
@@ -48,7 +48,7 @@ Artifacts: `eval_results/seam_orig_s1_v2.json`, `orig_s2_v2.json`, `orig_s3_v2.j
 
 ## Evaluator semantics
 
-`evaluation/quant_eval_v5.py` is frozen because the AMP result records its SHA-256 prefix (`7d6f6d4a1649f5ab`). Do not edit it to clean paths; use `evaluation/run_quant_eval_v5.py` for new runs. Semantic fixes belong in a new evaluator version.
+`evaluation/quant_eval_v5.py` is frozen because the AMP result records its SHA-256 prefix (`7d6f6d4a1649f5ab`). Do not edit it; use `evaluation/run_quant_eval_v5.py` for new runs. Semantic fixes belong in a new evaluator version.
 
 Seam JSON files must not be compared to v5 AMP numbers without accounting for the protocol change.
 

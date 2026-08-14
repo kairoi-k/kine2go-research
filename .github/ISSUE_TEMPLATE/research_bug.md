@@ -24,4 +24,4 @@ Include relevant commit, config, dataset/motion, checkpoint, evaluator version, 
 
 ## Potentially affected results
 
-List results or claims that may need to be invalidated or re-evaluated. Do not assume the scope is zero if it has not been checked.
+List results or claims that may need to be invalidated or re-evaluated.

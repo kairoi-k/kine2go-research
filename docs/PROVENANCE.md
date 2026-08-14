@@ -27,7 +27,7 @@ The fork adds research infrastructure around the upstream retargeting/imitation 
 
 ## Development provenance
 
-The research state was finalized at development milestone `0ad4343` on 2026-08-13. The frozen evaluation record contains more specific execution provenance:
+The frozen baseline is dated 2026-08-13. The evaluation record contains execution provenance:
 
 - training commit: `c64922265fa8cd92529b66b6aaaa52f16fe8eefd`
 - evaluation-time commit recorded by v5: `c57a9a8adc38e27e04cf4729f1ade3ce3cab6531`

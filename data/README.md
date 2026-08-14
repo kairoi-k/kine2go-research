@@ -41,6 +41,6 @@ The generator expects Kine2Go-style `*/motion.npy` clips at 60 Hz. It converts w
 
 Only `disc_data_c6.npy` is the frozen baseline input. Earlier `disc_data*` variants are not in this tree.
 
-Git blob identity for the retained development artifact: `ada1bd929a3b675735ff54c2e96d3b44b541d886`.
+Git blob SHA of `disc_data_c6.npy`: `ada1bd929a3b675735ff54c2e96d3b44b541d886`.
 
 For new experiments, write a new data artifact and record its content hash rather than overwriting the frozen baseline input.

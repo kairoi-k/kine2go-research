@@ -8,7 +8,7 @@ This repository distinguishes three levels of reproducibility:
 2. **Utility-level reproducibility** — CPU-safe conditional-AMP regressions can run without Genesis simulation.
 3. **Full computational reproduction** — requires a Genesis-compatible GPU environment plus the motion/checkpoint assets used by the experiment.
 
-The third level cannot be achieved from Git alone because the evaluated checkpoint is not distributed in the repository.
+The third level cannot be achieved from Git alone because the evaluated checkpoint is not recoverable.
 
 To run the frozen v5 evaluator from this checkout, use `python evaluation/run_quant_eval_v5.py` rather than editing `quant_eval_v5.py`. The launcher keeps the recorded file hash intact.
 
@@ -35,11 +35,11 @@ python tools/check_repo_hygiene.py
 python -m unittest discover -s tests -p 'test_*.py'
 ```
 
-The hosted `Code Quality` workflow runs repository-wide Ruff lint and format. Hygiene and the unit tests above are the local research gate, not a hosted-runner pass.
+`quant_eval_v5.py` is excluded from Ruff so its recorded hash stays intact.
 
 ## Frozen clean-run evidence
 
-The public release captures development milestone `0ad4343` from 2026-08-13. That identifier belongs to the development history; a clean-history public snapshot may have different Git commit IDs.
+Frozen 2026-08-13.
 
 Canonical evidence:
 

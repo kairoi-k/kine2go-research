@@ -31,9 +31,9 @@ For such changes:
 5. Identify results or claims invalidated by the change and rerun only what is necessary.
 6. Preserve failed experiments when they are part of the evidence trail.
 
-## Tests and CI
+## Tests
 
-The hosted `Code Quality` workflow runs Ruff lint and format on the public tree. Hygiene, syntax, and CPU-safe AMP tests remain a local research gate. Full Genesis simulation/training is environment-specific and is not a hosted-runner pass.
+Run the CPU-safe checks in the README before opening a PR. Full Genesis simulation/training is environment-specific.
 
 The frozen `evaluation/quant_eval_v5.py` is a provenance artifact. Do not edit it to satisfy style or portability checks; semantic fixes require a new evaluator version and a new result identity.
 

@@ -13,8 +13,6 @@ A fork of [`nomagiclab/kine2go-pipeline`](https://github.com/nomagiclab/kine2go-
 
 Mid-training clip (iter 1000): the policy does not hold commanded speed. Frozen v5 numbers are in [`eval_results/amp_clean_run_5000_v5.json`](eval_results/amp_clean_run_5000_v5.json).
 
-Development milestone `0ad4343` is provenance for the archive.
-
 ## Scope
 
 This repository contains:
@@ -97,7 +95,7 @@ python tools/check_repo_hygiene.py
 python -m unittest discover -s tests -p 'test_*.py'
 ```
 
-The hosted `Code Quality` workflow runs `ruff check` and `ruff format --check` on the public tree (`quant_eval_v5.py` is excluded). Hygiene and the unit tests above are the local research gate. GPU/Genesis integration is environment-specific and is not a hosted-runner pass.
+`quant_eval_v5.py` is excluded from Ruff so its recorded hash stays intact. GPU/Genesis integration is environment-specific.
 
 ## Next study
 
