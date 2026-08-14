@@ -1,0 +1,154 @@
+{
+ "meta": {
+  "version": "v5-frozen-20260813",
+  "ckpt": "logs/amp_clean_run/model_5000.pt",
+  "model_sha256": "4dfb111d165275f9",
+  "train_git_commit": "c64922265fa8cd92529b66b6aaaa52f16fe8eefd",
+  "eval_git_commit": "c57a9a8adc38e27e04cf4729f1ade3ce3cab6531",
+  "cfg_hash": "a31836d7ae2aaf95",
+  "motion_sha256": "d1367f511b9d1402",
+  "seed": 42,
+  "repeats": 5,
+  "timestamp": "2026-08-13 12:39:47",
+  "force_api": "no force field",
+  "evaluator_file_sha256": "7d6f6d4a1649f5ab"
+ },
+ "cmd_speed": 1.5,
+ "metrics": {
+  "A_speed": {
+   "mean_vx": {
+    "mean": 1.0517565312208954,
+    "std": 0.02494747843297075,
+    "n": 2
+   },
+   "rmse": {
+    "mean": 0.4657923477901238,
+    "std": 0.024724714440613457,
+    "n": 2
+   },
+   "std": {
+    "mean": 0.12661473549985736,
+    "std": 0.002638227820231477,
+    "n": 2
+   },
+   "dip_count_abs": {
+    "mean": 0.0,
+    "std": 0.0,
+    "n": 2
+   },
+   "dip_frac": {
+    "mean": 0.0,
+    "std": 0.0,
+    "n": 2
+   }
+  },
+  "B_gait": {
+   "joint_jerk_filtered": {
+    "mean": 1295.68017578125,
+    "std": 84.97486562087664,
+    "n": 2
+   },
+   "duty_factor": {
+    "mean": 0.19444444444444445,
+    "std": 0.01505875552526908,
+    "n": 2
+   },
+   "flight_frac": {
+    "mean": 0.4537037037037037,
+    "std": 0.03142696805273545,
+    "n": 2
+   },
+   "contact_transition_rate_hz": {
+    "mean": 9.541666666666666,
+    "std": 0.5303300858899106,
+    "n": 2
+   },
+   "stride_frequency_hz": {
+    "mean": 2.2105346920468962,
+    "std": 0.1503266464833662,
+    "n": 2
+   },
+   "diagonal_coord": {
+    "mean": 0.15093698310373455,
+    "std": 0.034113619473819266,
+    "n": 2
+   }
+  },
+  "C_stability": {
+   "falls": 3,
+   "n_complete_segments": 2,
+   "roll_std": {
+    "mean": 0.05416818032252953,
+    "std": 0.006931325344874236,
+    "n": 2
+   },
+   "pitch_std": {
+    "mean": 0.06804340100786355,
+    "std": 0.027507206831868403,
+    "n": 2
+   },
+   "height_std": {
+    "mean": 0.02118312659979085,
+    "std": 0.004569319164451488,
+    "n": 2
+   }
+  },
+  "E_energy": {
+   "estimated_mechanical_power_w": {
+    "mean": 4900.01220703125,
+    "std": 301.17569873801904,
+    "n": 2
+   },
+   "estimated_cost_of_transport": {
+    "mean": 31.652686675793618,
+    "std": 2.69434149052998,
+    "n": 2
+   }
+  }
+ },
+ "speed_sweep": {
+  "0.5": {
+   "actual_vx": 1.0589289861696738,
+   "mean_vy": 0.02552383332362364,
+   "rmse": 0.5871921031984249,
+   "fall_at_step": null
+  },
+  "1.0": {
+   "fall_at_step": 235,
+   "truncated": true,
+   "incomplete": true,
+   "actual_vx": null,
+   "rmse": null,
+   "mean_vy": null
+  },
+  "1.5": {
+   "actual_vx": 1.0715853380936164,
+   "mean_vy": -0.02391435078052045,
+   "rmse": 0.4478369661517619,
+   "fall_at_step": null
+  },
+  "2.0": {
+   "actual_vx": 1.0956516567203733,
+   "mean_vy": -0.014933279349848077,
+   "rmse": 0.9304081333716,
+   "fall_at_step": null
+  },
+  "2.5": {
+   "actual_vx": 1.0680661929978266,
+   "mean_vy": -0.040742408822256104,
+   "rmse": 1.4410660195950362,
+   "fall_at_step": null
+  }
+ },
+ "push": {
+  "base_vx": 1.1990482608477275,
+  "lateral_peak_mps": 0.0,
+  "recovered": true,
+  "recover_time_s": 0.3500000000000001,
+  "method": "acceleration_field",
+  "acc_mps2": 2.0,
+  "duration_s": 2.0,
+  "axis": "lateral",
+  "invalid": true
+ }
+}

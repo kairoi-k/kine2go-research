@@ -1,0 +1,71 @@
+# Python
+__pycache__/
+*.py[cod]
+*.so
+*.egg-info/
+.Python
+
+# Environments and local configuration
+.venv/
+venv/
+env/
+.env
+.env.*
+!.env.example
+.envrc
+.pdm-python
+.pdm-build/
+.pixi/
+
+# Build / packaging
+build/
+build-*/
+build_*/
+dist/
+wheels/
+site/
+target/
+
+# Tests, coverage, and static-analysis caches
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.pyre/
+.pytype/
+.hypothesis/
+.coverage
+.coverage.*
+htmlcov/
+coverage.xml
+
+# Notebooks / IDEs
+.ipynb_checkpoints/
+.idea/
+.vscode/
+tempCodeRunnerFile.py
+
+# Local application state / secrets
+.streamlit/secrets.toml
+.pypirc
+.abstra/
+
+# OS metadata
+.DS_Store
+._*
+Thumbs.db
+
+# Training / experiment outputs
+logs/
+wandb/
+runs/
+outputs/
+videos/
+*.pt
+*.pth
+*.ckpt
+*.log
+
+# Generated discriminator arrays.
+# The frozen baseline input is intentionally versioned.
+data/*.npy
+!data/disc_data_c6.npy

@@ -1,0 +1,17 @@
+Kine2Go Locomotion Research Pipeline
+
+This repository is a research fork of nomagiclab/kine2go-pipeline.
+The upstream source is distributed under the BSD 3-Clause License; the
+preserved upstream copyright and license terms are in LICENSE.
+
+Research-specific conditional-AMP, evaluation, audit, and reproducibility
+extensions in this fork are maintained by Che Wang. This notice does not
+relicense third-party code, datasets, robot assets, or motion sources.
+Their original terms and attribution requirements continue to apply.
+
+Third-party dataset/source licenses retained in this repository are collected
+under motion_retargeting/data/LICENSES/ where applicable. See
+`docs/PROVENANCE.md` for the upstream boundary and research-fork provenance.
+
+When using the project, cite the upstream Kine2Go work as well as this research
+fork where appropriate.

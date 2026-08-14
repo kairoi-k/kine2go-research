@@ -1,0 +1,92 @@
+{
+  "meta": {
+    "model": "model_20996.pt",
+    "model_sha256": "727bb2199d78c223bd2122a192a22e5df29ce6cf81acbf799b1eae78a6855d24",
+    "cfg_hash": "4387261b73cef161",
+    "motion_sha256": "5b7f629b6178825ac12062f8989e09f8e94621129d1a2bf9c665be11322af34a",
+    "git_commit": "146082d9ef422a8ae4879279a806b78cbaea9f08",
+    "seed": 42,
+    "duration_s": 10.0,
+    "warmup_s": 1.0,
+    "dip_threshold_mps": 0.5,
+    "force_api": "NONE(velocity_impulse_fallback)",
+    "timestamp": "2026-08-12T23:30:32+0800",
+    "eval_version": "quant_eval_v2"
+  },
+  "cmd_speed": 1.5,
+  "metrics": {
+    "A_speed": {
+      "mean_vx": {
+        "mean": 1.358759370535888,
+        "std": 0.02993796199422194
+      },
+      "rmse": {
+        "mean": 0.2725143523612586,
+        "std": 0.02327084757647807
+      },
+      "std": {
+        "mean": 0.2321153255768751,
+        "std": 0.009104023416002513
+      },
+      "dip_count_abs": {
+        "mean": 1.0,
+        "std": 0.0
+      },
+      "dip_frac": {
+        "mean": 0.004629629629629629,
+        "std": 0.000925925925925926
+      },
+      "fft_peak_period_s": {
+        "mean": 3.0,
+        "std": 0.0
+      }
+    },
+    "B_gait": {
+      "joint_jerk_filtered": {
+        "mean": 1117.61767578125,
+        "std": 27.9866943359375
+      },
+      "duty_factor": {
+        "mean": 0.27569444444444446,
+        "std": 0.007175925925925919
+      },
+      "flight_frac": {
+        "mean": 0.29074074074074074,
+        "std": 0.020370370370370372
+      },
+      "diagonal_coord": {
+        "mean": 0.3424911418351706,
+        "std": 0.030008281588189106
+      },
+      "cadence_hz": {
+        "mean": 10.916666666666668,
+        "std": 0.3611111111111116
+      }
+    },
+    "C_stability": {
+      "falls": 0,
+      "roll_std": {
+        "mean": 0.07387619784303939,
+        "std": 0.0014259647388719862
+      },
+      "pitch_std": {
+        "mean": 0.03514318798806751,
+        "std": 0.0012175339897973932
+      },
+      "height_std": {
+        "mean": 0.009716076097422586,
+        "std": 0.0013686004034778824
+      }
+    },
+    "E_energy": {
+      "mean_sq_joint_vel": {
+        "mean": 164.67160034179688,
+        "std": 3.5009613037109375
+      },
+      "true_power_w": {
+        "mean": 619.4066467285156,
+        "std": 23.375885009765625
+      }
+    }
+  }
+}
