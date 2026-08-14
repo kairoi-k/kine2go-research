@@ -23,7 +23,7 @@ The fork adds research infrastructure around the upstream retargeting/imitation 
 - preregistered acceptance criteria and explicit negative-result reporting;
 - retained three-seed reference-seam evaluation JSON (historical v2 protocol).
 
-`docs/IMPLEMENTATION_AUDIT.md` records correctness issues relevant to the frozen experiment without reproducing internal review transcripts.
+`docs/IMPLEMENTATION_AUDIT.md` records correctness issues relevant to the frozen experiment.
 
 ## Development provenance
 
@@ -36,11 +36,11 @@ The research state was finalized at development milestone `0ad4343` on 2026-08-1
 - evaluator SHA-256 prefix: `7d6f6d4a1649f5ab`
 - configuration hash: `a31836d7ae2aaf95`
 
-These IDs are from the development archive; they are not commits in this repository.
+These IDs are from the development history; they are not commits in this repository.
 
 ## Large artifacts
 
-The evaluated `model_5000.pt` is not recoverable. It lived at `logs/amp_clean_run/model_5000.pt` under a `/tmp` working tree and was wiped by a WSL reboot on 2026-08-14. Identity remains the recorded SHA-256 prefix `4dfb111d165275f9` and the committed v5 JSON.
+The evaluated `model_5000.pt` is not recoverable (lost 2026-08-14). Identity: SHA-256 prefix `4dfb111d165275f9` and the committed v5 JSON.
 
 The canonical conditioned discriminator dataset `data/disc_data_c6.npy` is in git because it is consumed by the frozen training path. Superseded intermediate discriminator arrays are not.
 

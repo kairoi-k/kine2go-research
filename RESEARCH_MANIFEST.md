@@ -33,7 +33,7 @@ The tested configuration failed the preregistered controllability and stability 
 - The sweep contained an additional fall at command 1.0 m/s.
 - Reliable command-conditioned locomotion was not established across the evaluated range.
 
-The conclusion is limited to this audited configuration. It does not establish that AMP generally fails. Reviewed implementation defects were corrected before the clean run, but undiscovered implementation issues cannot be excluded.
+The conclusion is limited to this audited configuration. It does not establish that AMP generally fails.
 
 The failure mechanism remains unresolved. Candidate explanations include insufficient single-reference support across commanded speeds and task/style or discriminator-conditioning effects.
 
