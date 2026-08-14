@@ -10,11 +10,9 @@ This file is the compact state of record. Historical evaluator versions stay whe
 - Upstream base: `65b39f104706c1b4307dfc2a7df2aa8bed8d20aa`
 - Upstream paper: Pałucki et al., *Kine2Go: Kinematic dataset for the Unitree Go2 robot with diverse gaits and motions* (2026)
 
-Development milestone IDs (e.g. `0ad4343`) refer to the archive, not this Git history.
-
 ## Frozen single-reference conditional-AMP baseline
 
-- Development milestone: `0ad4343` (2026-08-13)
+- Date: 2026-08-13
 - Training configuration: preregistered single-reference conditional AMP
 - Evaluated policy: `model_5000.pt`
 - Policy SHA-256 prefix: `4dfb111d165275f9`
@@ -44,7 +42,7 @@ The failure mechanism remains unresolved. Candidate explanations include insuffi
 - Under v5, a sweep trajectory containing a fall is incomplete for primary sweep metrics.
 - Superseded evaluators remain historical evidence only; they do not override v5 where semantics conflict.
 - Claims must identify the protocol, evaluator, and result artifact that support them.
-- The checkpoint is not distributed in Git; its recorded hash identifies the evaluated local artifact.
+- The evaluated `model_5000.pt` is not recoverable (lost 2026-08-14). Identity: SHA-256 prefix `4dfb111d165275f9`.
 
 ## Next study — not part of this baseline
 

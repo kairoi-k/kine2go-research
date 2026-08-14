@@ -1,4 +1,4 @@
-"""Fail CI when generated, private-workspace, or stale public artifacts enter the repository."""
+"""Reject generated/private artifacts and broken local documentation links."""
 
 from __future__ import annotations
 
