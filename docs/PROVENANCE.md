@@ -27,7 +27,7 @@ The fork adds research infrastructure around the upstream retargeting/imitation 
 
 ## Development provenance
 
-The curated release captures the research state finalized at development milestone `0ad4343` on 2026-08-13. The frozen evaluation record contains more specific execution provenance:
+The research state was finalized at development milestone `0ad4343` on 2026-08-13. The frozen evaluation record contains more specific execution provenance:
 
 - training commit: `c64922265fa8cd92529b66b6aaaa52f16fe8eefd`
 - evaluation-time commit recorded by v5: `c57a9a8adc38e27e04cf4729f1ade3ce3cab6531`
@@ -36,13 +36,13 @@ The curated release captures the research state finalized at development milesto
 - evaluator SHA-256 prefix: `7d6f6d4a1649f5ab`
 - configuration hash: `a31836d7ae2aaf95`
 
-These identifiers describe the private/development evidence chain. A clean-history public release intentionally starts a new Git history and therefore does not promise that development commit IDs are reachable from the public repository.
+These IDs are from the development archive; they are not commits in this repository.
 
 ## Large artifacts
 
 The evaluated `model_5000.pt` checkpoint is not distributed in Git. The repository preserves its identity through the recorded hash and committed evaluation result.
 
-The canonical conditioned discriminator dataset `data/disc_data_c6.npy` is retained because it is small enough for the research release and is directly consumed by the frozen training path. Superseded intermediate discriminator arrays are omitted.
+The canonical conditioned discriminator dataset `data/disc_data_c6.npy` is in git because it is consumed by the frozen training path. Superseded intermediate discriminator arrays are not.
 
 ## External source attributions
 

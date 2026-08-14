@@ -31,8 +31,6 @@ For such changes:
 5. Identify results or claims invalidated by the change and rerun only what is necessary.
 6. Preserve failed experiments when they are part of the evidence trail.
 
-An implementation fix does not justify claiming that no undiscovered implementation issue remains. Claims should describe what was tested and bound conclusions accordingly.
-
 ## Tests and CI
 
 The hosted `Code Quality` workflow runs Ruff lint and format on the public tree. Hygiene, syntax, and CPU-safe AMP tests remain a local research gate. Full Genesis simulation/training is environment-specific and is not a hosted-runner pass.

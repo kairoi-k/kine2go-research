@@ -1,14 +1,15 @@
 # Kine2Go research fork
 
-A research fork of [`nomagiclab/kine2go-pipeline`](https://github.com/nomagiclab/kine2go-pipeline). It is **not** the upstream pipeline and not a general locomotion library.
+A fork of [`nomagiclab/kine2go-pipeline`](https://github.com/nomagiclab/kine2go-pipeline). Recorded results: a preregistered single-reference conditional-AMP **negative** on command following, and a three-seed reference-seam RMSE intervention. Evidence map: [`docs/RESEARCH_INDEX.md`](docs/RESEARCH_INDEX.md).
 
-Recorded results: a preregistered single-reference conditional-AMP **negative** on command following, and a three-seed reference-seam RMSE intervention. Evidence map: [`docs/RESEARCH_INDEX.md`](docs/RESEARCH_INDEX.md).
+[![arXiv](https://img.shields.io/badge/arXiv-2606.14433-b31b1b)](https://arxiv.org/abs/2606.14433)
+[![Hugging Face Dataset](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Dataset-yellow)](https://huggingface.co/datasets/MIMUW-Robotics/kine2go)
 
-> **AMP, frozen 2026-08-13.** Span **0.009 m/s** (need ≥ 0.4); **3/5** repeats at 1.5 m/s fell. Limited to this configuration; not “AMP never works”.
+> **AMP, frozen 2026-08-13.** Span **0.009 m/s** (need ≥ 0.4); **3/5** repeats at 1.5 m/s fell.
 >
-> **Seam, v2 JSON record.** Same start, three seeds, repaired vs original cycle seam: RMSE **-29% / -23% / -41%** (aggregate **-31%**). Not speed controllability; both arms stay near ~1.4 m/s.
+> **Seam, v2 JSON record.** Same start, three seeds, repaired vs original cycle seam: RMSE **-29% / -23% / -41%** (aggregate **-31%**). Both arms stay near ~1.4 m/s.
 
-The curated release represents research state finalized at development milestone `0ad4343`. That identifier belongs to the development archive and need not exist in a clean-history public snapshot. This repository is that snapshot.
+Development milestone `0ad4343` is provenance for the archive.
 
 ## Scope
 
@@ -62,7 +63,7 @@ python -m motion_imitation.amp_imitation \
   --disc-data data/disc_data_c6.npy
 ```
 
-This is an entry-point example, not a reconstruction of the exact frozen launch command. The registered configuration, held-fixed choices, acceptance thresholds, and final verdict are recorded in [`docs/clean_run_preregistration.md`](docs/clean_run_preregistration.md). New experiments must use new result identities rather than modifying frozen evaluator semantics or artifacts in place.
+Exact frozen launch and gates: [`docs/clean_run_preregistration.md`](docs/clean_run_preregistration.md). New experiments get new result identities.
 
 ## Frozen evidence
 

@@ -74,4 +74,4 @@ Any semantic evaluator fix belongs in a new version rather than an in-place modi
 
 ## Audit boundary
 
-The audit supports the statement that the known reviewed correctness defects were addressed before the clean run. It does not prove the absence of latent bugs, and it does not by itself establish the scientific mechanism behind the negative result. See [`clean_run_preregistration.md`](clean_run_preregistration.md) for the registered question and final verdict.
+Reviewed defects listed above were addressed before the clean run. Registered question and verdict: [`clean_run_preregistration.md`](clean_run_preregistration.md).

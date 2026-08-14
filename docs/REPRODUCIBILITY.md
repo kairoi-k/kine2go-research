@@ -59,7 +59,7 @@ Canonical evidence:
 
 ## Data
 
-`data/disc_data_c6.npy` is the canonical conditioned discriminator dataset retained for the frozen baseline. Older intermediate discriminator arrays are intentionally omitted from the curated release.
+`data/disc_data_c6.npy` is the frozen baseline discriminator dataset.
 
 The dataset schema and derivation are documented in `data/README.md`; `data/extract_disc_data_c.py` is the maintained generator for new conditioned datasets.
 
