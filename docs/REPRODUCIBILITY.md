@@ -49,7 +49,7 @@ Canonical evidence:
 - evaluator version: `v5-frozen-20260813`
 - evaluator SHA-256 prefix: `7d6f6d4a1649f5ab`
 - result: `eval_results/amp_clean_run_5000_v5.json`
-- evaluated policy: local `logs/amp_clean_run/model_5000.pt`
+- evaluated policy: `logs/amp_clean_run/model_5000.pt` (not recoverable; wiped from `/tmp` on 2026-08-14)
 - policy SHA-256 prefix: `4dfb111d165275f9`
 - training revision recorded by the result: `c64922265fa8cd92529b66b6aaaa52f16fe8eefd`
 - motion SHA-256 prefix recorded by the result: `d1367f511b9d1402`

@@ -40,7 +40,7 @@ These IDs are from the development archive; they are not commits in this reposit
 
 ## Large artifacts
 
-The evaluated `model_5000.pt` checkpoint is not distributed in Git. The repository preserves its identity through the recorded hash and committed evaluation result.
+The evaluated `model_5000.pt` is not recoverable. It lived at `logs/amp_clean_run/model_5000.pt` under a `/tmp` working tree and was wiped by a WSL reboot on 2026-08-14. Identity remains the recorded SHA-256 prefix `4dfb111d165275f9` and the committed v5 JSON.
 
 The canonical conditioned discriminator dataset `data/disc_data_c6.npy` is in git because it is consumed by the frozen training path. Superseded intermediate discriminator arrays are not.
 

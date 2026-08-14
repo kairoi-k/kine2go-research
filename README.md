@@ -84,7 +84,7 @@ Exact frozen launch and gates: [`docs/clean_run_preregistration.md`](docs/clean_
 | [`docs/REPRODUCIBILITY.md`](docs/REPRODUCIBILITY.md) | environment and reproduction boundary |
 | [`docs/PROVENANCE.md`](docs/PROVENANCE.md) | upstream and development provenance |
 
-The evaluated `model_5000.pt` is not in this tree. Recorded SHA-256 prefix: `4dfb111d165275f9`. The committed result JSON is the canonical evaluation record.
+The evaluated `model_5000.pt` is not recoverable (lost with a `/tmp` working tree on 2026-08-14). SHA-256 prefix `4dfb111d165275f9`. The committed result JSON is the record.
 
 ## Checks
 
