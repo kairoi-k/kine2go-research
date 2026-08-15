@@ -27,9 +27,12 @@ class EvalLauncherTests(unittest.TestCase):
     def test_launcher_rewrites_legacy_path_to_checkout_root(self) -> None:
         module = _launcher_module()
         source = FROZEN.read_text(encoding="utf-8")
-        patched = source.replace(module.LEGACY_ROOT, str(ROOT))
+        dest = str(ROOT)
+        if Path(dest).resolve() == Path(module.LEGACY_ROOT).resolve():
+            dest = str(ROOT / "public-checkout")
+        patched = source.replace(module.LEGACY_ROOT, dest)
         self.assertNotIn(module.LEGACY_ROOT, patched)
-        self.assertIn(str(ROOT), patched)
+        self.assertIn(dest, patched)
         self.assertTrue(LAUNCHER.is_file())
 
 

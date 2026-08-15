@@ -2,6 +2,10 @@
 
 `disc_data_c6.npy` is the canonical real-transition dataset used by the frozen conditional-AMP training path.
 
+## License
+
+This array is derived from Kine2Go Go2 `motion.npy` clips. Those clips are retargeted from sources that include AI4Animation mocap (**CC BY-NC 4.0**). The `.npy` is a derived feature artifact and is **not** relicensed by this repository's BSD 3-Clause `LICENSE`. Treat redistribution as non-commercial; see [`../motion_retargeting/data/README.md`](../motion_retargeting/data/README.md) and [`../NOTICE`](../NOTICE).
+
 ## Schema
 
 Each row has 61 float features:

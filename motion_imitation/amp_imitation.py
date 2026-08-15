@@ -53,7 +53,7 @@ class TrainCfg:
 
     # Conditional AMP.
     disc_data: str = "data/disc_data_c6.npy"
-    style_weight: float = 0.45
+    style_weight: float = 0.3
     tracking_weight: float = 2.0
     tracking_sigma: float = 0.25
     speed_match: bool = False
@@ -65,7 +65,7 @@ class TrainCfg:
     disc_lr: float = 1e-5
     disc_lambda_gp: float = 10.0
     disc_batch: int = 4096
-    disc_buckets: int = 8
+    disc_buckets: int = 6
 
     # Positive-only command curriculum used by the frozen clean run.
     curriculum: bool = True
