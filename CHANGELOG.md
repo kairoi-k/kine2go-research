@@ -1,5 +1,10 @@
 # Changelog
 
+## 2026-08-15
+
+- Training CLI default `style_weight` matches the frozen protocol (0.3).
+- `data/disc_data_c6.npy` license: derived CC BY-NC feature array, not BSD-relicensed.
+
 ## 2026-08-14
 
 - README clip of the AMP command-follow failure (`docs/media/amp_command_fail.gif`).

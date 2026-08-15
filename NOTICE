@@ -10,8 +10,10 @@ relicense third-party code, datasets, robot assets, or motion sources.
 Their original terms and attribution requirements continue to apply.
 
 Third-party dataset/source licenses retained in this repository are collected
-under motion_retargeting/data/LICENSES/ where applicable. See
-`docs/PROVENANCE.md` for the upstream boundary and research-fork provenance.
+under motion_retargeting/data/LICENSES/ where applicable. The frozen
+discriminator array `data/disc_data_c6.npy` is a derived feature of Kine2Go
+clips that include AI4Animation (CC BY-NC 4.0) lineage and is not BSD-relicensed.
+See `data/README.md` and `docs/PROVENANCE.md`.
 
 When using the project, cite the upstream Kine2Go work as well as this research
 fork where appropriate.

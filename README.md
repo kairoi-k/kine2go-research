@@ -63,10 +63,11 @@ python -m motion_imitation.amp_imitation \
   <experiment-name> <motion.npy> \
   --num-envs 16384 \
   --max-iterations 5000 \
-  --disc-data data/disc_data_c6.npy
+  --disc-data data/disc_data_c6.npy \
+  --style-weight 0.3
 ```
 
-Exact frozen launch and gates: [`docs/clean_run_preregistration.md`](docs/clean_run_preregistration.md). New experiments get new result identities.
+`--style-weight 0.3` matches the frozen protocol. Exact frozen launch and gates: [`docs/clean_run_preregistration.md`](docs/clean_run_preregistration.md). New experiments get new result identities.
 
 ## Frozen evidence
 
